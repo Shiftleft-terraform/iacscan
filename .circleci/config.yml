@@ -7,7 +7,7 @@ jobs:
     executor: scan/compute
     steps:
       - checkout
-      - run: docker pull nginx
+      - run: docker pull ngnix:alpine
       - run: mkdir -p workspace
       - run: docker image
       - run: 'docker save nginx:latest -o workspace/image.tar'
@@ -34,7 +34,7 @@ workflows:
           prisma_cloud_compute_url: https://us-east1.cloud.twistlock.com/us-1-111573457
           prisma_cloud_compute_user: 358ec15f-72f6-4eba-bad6-01a96cf00bdb
           prisma_cloud_compute_pass: PC_COMPUTE_PASS
-          image: ngnix:latest
+          image: ngnix:alpine
           image_tar: image.tar
           vulnerability_threshold: critical
           compliance_threshold: ''
