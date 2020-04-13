@@ -7,7 +7,7 @@ jobs:
     executor: scan/compute
     steps:
       - checkout
-      - run: docker pull ubuntu
+      - run: docker pull alpine
       - run: mkdir -p workspace
       - run: docker image
       - run: 'docker save ubuntu:latest -o workspace/image.tar'
