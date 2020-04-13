@@ -35,8 +35,7 @@ workflows:
           prisma_cloud_compute_url: https://looconsole.southeastasia.cloudapp.azure.com:8083
           #prisma_cloud_compute_user: 358ec15f-72f6-4eba-bad6-01a96cf00bdb
           prisma_cloud_compute_user: admin
-          #prisma_cloud_compute_pass: PC_COMPUTE_PASS
-          prisma_cloud_compute_pass: arcsight
+          prisma_cloud_compute_pass: PC_COMPUTE_PASS
           image: ubuntu:latest
           image_tar: image.tar
           #vulnerability_threshold: critical
