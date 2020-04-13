@@ -39,6 +39,6 @@ workflows:
           prisma_cloud_compute_pass: arcsight
           image: ubuntu:latest
           image_tar: image.tar
-          vulnerability_threshold: critical
-          compliance_threshold: ''
+          #vulnerability_threshold: critical
+          #compliance_threshold: ''
           only_fixed: true
