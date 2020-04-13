@@ -41,4 +41,4 @@ workflows:
           image_tar: image.tar
           #vulnerability_threshold: critical
           #compliance_threshold: ''
-          only_fixed: true
+          #only_fixed: true
