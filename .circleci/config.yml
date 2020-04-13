@@ -10,7 +10,7 @@ jobs:
       - run: docker pull alpine
       - run: mkdir -p workspace
       - run: docker image
-      - run: 'docker save ubuntu:latest -o workspace/image.tar'
+      - run: 'docker save alpine:latest -o workspace/image.tar'
       - persist_to_workspace:
           root: workspace
           paths:
